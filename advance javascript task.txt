@@ -1,4 +1,4 @@
-REST OPERATORS
+***REST OPERATORS******
 jb hum function ko call krty wakt bht sara data pass krty hai wo function chalty wakt 
 parametors mai ya data utha ta hai or hum (...others) kr k baki sara data others mai ajata ha.
 const function (a,b,c , ...others){
@@ -8,24 +8,24 @@ const function (a,b,c , ...others){
 
 fucntion(1,2,3,4,5,6,6,7)
 
-SPREAD OPERATORS
+***********SPREAD OPERATORS********
 jb hum function call krty ha us wakt agr humy us ko array pass krna ha or wo array mai bht data hai to hum (...array)
 kry gy to sara data us function mai chala jaye ga
 
 array = [1,3,4,5,6,7,8,9,6]
 function(...array)
 
-CALL BACK
+*********CALL BACK*******
 call back hum log is liye use krty hai q k jb humy 2 function ek sat chalany hongy settiome out mai
 to get data ka function 1 mint mai chaly ga or create data a 3 seconds k bd to jb hum 3rd data create kary gy to wo get nhe ohga.
 q k get data 1 second mai chal raha jis sy page reload refresh hojata ha or 3sra data create nhe hota.
 
-NEW PROMISES 
+******NEW PROMISES****** 
 YA 2 paramators pass krta ha reject resolve jb b koi masla nhe hota to resolve chalta hai or jb b
 koi masla ata ha to reject section chalta ha .
 createfuction ().then(getdata).catch(err=>console.log(err))
 
-ASYNC AWAIT 
+*****ASYNC AWAIT**** 
 main function ko async lagai gy or jis function ka wait krna ha us ko await lagai gy.
 
 async function start(){
@@ -34,7 +34,7 @@ getdata()
 }
 
 
-CLOSURES
+*******CLOSURES********
 
 var sum = function(a){
     console.log(a)
@@ -90,7 +90,7 @@ console.log(store.getsumthree())
 closures mai inner function ko access krny k liye zaroori hai k ap outerfunction ko ek varible mai store karo
 const store =sum(2,3,4)
 
-CALL 
+********CALL********* 
 jb b hum 2 obj banaty hai or hum chaty hai k dosry obj ka data b humary pas ajaye to
 hum obj k and fuc banaty hai or us ka this utha ty hai.
 to dono obj ka data ajata hai
@@ -105,17 +105,17 @@ console.log(this.name+state)
 }
 printdetail.call(userdata2,"ahmed","safdar")
 
-APPLY
+*****APPLY*******
 call or apply mai difference ya ha k call mai data parameter mai pass krty hai or apply mai
 array mai pass hota ha.
 printdetail.apply(userdata2,["ahmed","safdar"])
 
-BIND
+****BIND***
 bind function same call ki tara kaam krta hai lekin is mai ek vairble mai store krna parhta ha like
 let newfunc = printdetail.bind(userdetail,"ahmed","safdar")
 
 
-PROTOTYPE
+*********PROTOTYPE********
 
 const obj = {
 name:"safdar",
@@ -129,12 +129,12 @@ __proto__:obj
 
 console.log(obj2)
 
-HOISTING
+**HOISTING*******
 hoisting ka taluq memory sy hai jesy kuch cheez hum declare krty hai uper or 
 us ko neachy access kary gy 
 to us ko hoisting kethty ha.
 
-EVENT BUBBLING
+***EVENT BUBBLING**********
 from child to parent propogation
 var div=document.querySelector("div")
 var button=document.querySelector("button")
@@ -148,7 +148,7 @@ button.addEventListener("click",()=>{
     console.log("button")
 })
 
-CAPTURING
+*******CAPTURING*******
 var div=document.querySelector("div")
 var button=document.querySelector("button")
 
@@ -164,7 +164,7 @@ button.addEventListener("click",()=>{
 },true)
 
 
-CURRING
+**CURRING******
 ya i ek naya tareeka hai function bana k value pass krny ka 
 // function Adding(a,b,c){
 //     console.log(a,b,c)
@@ -194,7 +194,7 @@ console.log(aum)
 
 }
 
-Infinite CURRYING
+******Infinite CURRYING********
 
 is mai hum ya dekhty hai k b ki value a rahi hai k nhe jb tk ayegi to hum a mai 
 add krty rahy gy jb values khatam 
@@ -209,7 +209,7 @@ function Infinit (a){
 }
  console.log(Infinit(3)(4)(5)(5)())
 
-MEMOIZATION
+**********MEMOIZATION**********
 is ka concept ya hai k hum kam time mai zyada kaam kary or kam time waste kary .
 jesy hum ek api ko first time call kr k redux mai save karany k bd dubara jb b api ko hit kary gy to 
 server pai request nhe jaye gi redux pai jayegi second time.
@@ -254,7 +254,7 @@ console.log(store(5))
 console.timeEnd()
 
 
-DEBOUNCING
+*******DEBOUNCING*******
 unwanted functions jis ki waja sy app slow ho jati ha is ko rokny k liye hum debouncing or throttling ko use krty hai.
 jb b hum ek specific time interval or tb user koi request na bej raha ho tab call ho. 
 
@@ -281,7 +281,7 @@ const store = BetterFun(Getdata,1000)
 
 
 
-THROTTLING 
+******THROTTLING ********
 is ka example hum aisy laity hai k humary pas ek button hai jis pai click krny pai function chalta hai
 hum chaty hai k is pai click ek br ho or phr kuxh time k liye button disable hojaye taky dobara 
 click na ho.
